@@ -1,0 +1,11 @@
+
+SELECT AVG(age) FROM students;
+SELECT MIN(age) FROM students;
+SELECT MAX(age) FROM students;
+SELECT COUNT(*) FROM students;
+SELECT SUM(age) FROM students;
+
+
+SELECT s_id, COUNT(*) FROM Book GROUP BY s_id;
+
+SELECT s_id, COUNT(*) FROM Book GROUP BY s_id HAVING COUNT(*) > 1;
